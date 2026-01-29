@@ -18,33 +18,36 @@
             scroll-behavior: smooth;
         }
 
-        /* LOGO */
-        .logo-container {
-            background: #0a0f14;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
+        /* HEADER WITH LOGO LEFT */
+        header {
+            background: linear-gradient(135deg, #0a0f14, #111b2b);
+            padding: 40px 20px;
+            border-bottom: 1px solid #1f2937;
         }
-        .logo-container img {
+
+        .header-content {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .header-logo {
             height: 80px;
             filter: drop-shadow(0 0 8px #00aaff);
         }
 
-        /* HEADER */
-        header {
-            background: linear-gradient(135deg, #0a0f14, #111b2b);
-            padding: 60px 20px;
-            text-align: center;
-            border-bottom: 1px solid #1f2937;
-        }
         header h1 {
             font-size: 3rem;
-            margin-bottom: 10px;
+            margin: 0;
             text-shadow: 0 0 10px #00aaff;
         }
+
         header p {
             font-size: 1.2rem;
             opacity: 0.8;
+            margin: 5px 0 0 0;
         }
 
         /* NAVIGATION */
@@ -60,6 +63,7 @@
             border-bottom: 1px solid #1f2937;
             position: relative;
         }
+
         nav a {
             color: #e6edf3;
             text-decoration: none;
@@ -68,6 +72,7 @@
             position: relative;
             padding: 5px;
         }
+
         /* Glowing underline animation */
         nav a::after {
             content: "";
@@ -80,6 +85,7 @@
             box-shadow: 0 0 8px #00aaff;
             transition: width 0.3s ease, left 0.3s ease;
         }
+
         nav a:hover::after {
             width: 100%;
             left: 0;
@@ -105,6 +111,7 @@
             color: white;
             box-shadow: inset 0 0 200px rgba(0,0,0,0.7);
         }
+
         .landing h2 {
             font-size: 2.8rem;
             text-shadow: 0 0 15px #00aaff;
@@ -116,6 +123,7 @@
             max-width: 1100px;
             margin: auto;
         }
+
         section h2 {
             font-size: 2.2rem;
             margin-bottom: 20px;
@@ -128,6 +136,7 @@
             transform: translateY(30px);
             transition: opacity 1s ease-out, transform 1s ease-out;
         }
+
         .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
@@ -152,6 +161,7 @@
             position: relative;
             overflow: hidden;
         }
+
         .service-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 0 18px rgba(0, 170, 255, 0.4);
@@ -166,6 +176,7 @@
             display: inline-block;
             animation: float 3s ease-in-out infinite;
         }
+
         @keyframes float {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-6px); }
@@ -186,15 +197,16 @@
 
 <body>
 
-    <!-- LOGO -->
-    <div class="logo-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Shield_icon_blue.svg" alt="Santotonio Logo">
-    </div>
-
-    <!-- HEADER -->
+    <!-- HEADER WITH LOGO LEFT -->
     <header>
-        <h1>Santotonio</h1>
-        <p>Cybersecurity • Technology • Innovation</p>
+        <div class="header-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Shield_icon_blue.svg" 
+                 alt="Logo" class="header-logo">
+            <div>
+                <h1>Santotonio</h1>
+                <p>Cybersecurity • Technology • Innovation</p>
+            </div>
+        </div>
     </header>
 
     <!-- NAVIGATION -->
