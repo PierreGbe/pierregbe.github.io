@@ -106,15 +106,20 @@
         /* LANDING */
         .landing {
             background: url('https://upload.wikimedia.org/wikipedia/commons/8/8a/Cyber_Security_%283%29.jpg') center/cover no-repeat;
-            padding: 140px 20px;
+            padding: 160px 20px;
             text-align: center;
             color: white;
-            box-shadow: inset 0 0 200px rgba(0,0,0,0.7);
         }
 
         .landing h2 {
-            font-size: 2.8rem;
+            font-size: 3rem;
             text-shadow: 0 0 15px #00aaff;
+            margin-bottom: 10px;
+        }
+
+        .landing p {
+            font-size: 1.3rem;
+            opacity: 0.9;
         }
 
         /* SECTIONS */
@@ -142,6 +147,14 @@
             transform: translateY(0);
         }
 
+        /* STAGGERED DELAYS */
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; }
+        .delay-4 { transition-delay: 0.4s; }
+        .delay-5 { transition-delay: 0.5s; }
+        .delay-6 { transition-delay: 0.6s; }
+
         /* SERVICE GRID */
         .services-grid {
             display: grid;
@@ -157,9 +170,7 @@
             border-radius: 12px;
             border: 1px solid #1f2937;
             box-shadow: 0 0 12px rgba(0, 170, 255, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-            position: relative;
-            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, opacity 1s ease-out, transform 1s ease-out;
         }
 
         .service-card:hover {
@@ -200,11 +211,11 @@
     <!-- HEADER WITH LOGO LEFT -->
     <header>
         <div class="header-content">
-            <img src="logo.png" 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Shield_icon_blue.svg" 
                  alt="Logo" class="header-logo">
             <div>
                 <h1>Santotonio</h1>
-                <p>Cybersecurity • Information Technology • Innovation</p>
+                <p>Cybersecurity • Technology • Innovation</p>
             </div>
         </div>
     </header>
@@ -230,40 +241,40 @@
 
         <div class="services-grid">
 
-            <div class="service-card">
+            <div class="service-card delay-1">
                 <i class="bi bi-laptop service-icon"></i>
                 <h3>IT Support</h3>
-                <p>Reliable technical assistance to keep your systems running smoothly. We troubleshoot issues, maintain infrastructure, and optimize performance.</p>
+                <p>Reliable technical assistance to keep your systems running smoothly.</p>
             </div>
 
-            <div class="service-card">
+            <div class="service-card delay-2">
                 <i class="bi bi-shield-lock service-icon"></i>
                 <h3>Cybersecurity Awareness</h3>
-                <p>Training programs that help your team recognize and avoid cyber threats, including phishing, social engineering, and safe browsing practices.</p>
+                <p>Training programs to help your team recognize and avoid cyber threats.</p>
             </div>
 
-            <div class="service-card">
+            <div class="service-card delay-3">
                 <i class="bi bi-file-earmark-lock service-icon"></i>
                 <h3>Compliance Projects (ISO 27001, NIS2)</h3>
-                <p>Support for achieving compliance with ISO 27001 and NIS2, including risk assessments, documentation, and audit preparation.</p>
+                <p>Support for achieving compliance with major cybersecurity standards.</p>
             </div>
 
-            <div class="service-card">
+            <div class="service-card delay-4">
                 <i class="bi bi-diagram-3 service-icon"></i>
                 <h3>Cybersecurity Governance Setup</h3>
-                <p>Establishing strong governance frameworks, policies, and processes to align your cybersecurity strategy with business objectives.</p>
+                <p>Building strong governance frameworks and security policies.</p>
             </div>
 
-            <div class="service-card">
+            <div class="service-card delay-5">
                 <i class="bi bi-bug service-icon"></i>
                 <h3>Penetration Testing</h3>
-                <p>Simulated real‑world attacks to uncover vulnerabilities in your systems, networks, and applications, with actionable recommendations.</p>
+                <p>Simulated attacks to uncover vulnerabilities before attackers do.</p>
             </div>
 
-            <div class="service-card">
+            <div class="service-card delay-6">
                 <i class="bi bi-person-badge service-icon"></i>
                 <h3>CISO as a Service</h3>
-                <p>Executive‑level cybersecurity leadership, including risk management, policy development, and incident response planning.</p>
+                <p>Executive‑level cybersecurity leadership tailored to your needs.</p>
             </div>
 
         </div>
@@ -272,14 +283,26 @@
     <!-- ABOUT -->
     <section class="fade-in" id="about">
         <h2>About Us</h2>
-        <p>We are a team of cybersecurity experts dedicated to safeguarding digital environments through innovation, expertise, and strategic guidance.</p>
+        <p>
+            This section will contain a detailed description of your company, mission, 
+            values, and expertise. You can expand this text with information about your 
+            background, your team, your approach to cybersecurity, and what sets you apart 
+            from competitors.  
+            <br><br>
+            Feel free to replace this placeholder text with your own content.
+        </p>
     </section>
-
 
     <!-- CONTACT -->
     <section class="fade-in" id="contact">
         <h2>Contact</h2>
-        <p>Reach out for inquiries, partnerships, or support.</p>
+        <p>
+            This section will include your contact details such as email, phone number, 
+            address, or a contact form. You can also add information about response times, 
+            support availability, or links to social media profiles.  
+            <br><br>
+            Replace this placeholder text with your specific contact information.
+        </p>
     </section>
 
     <!-- FOOTER -->
