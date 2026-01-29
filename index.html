@@ -4,33 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santotonio</title>
+
     <style>
-        body { margin: 0; font-family: Arial, sans-serif; }
-        header { background: #222; color: white; padding: 20px; text-align: center; }
-        nav { background: #333; padding: 10px; }
+        /* GLOBAL STYLES */
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+            scroll-behavior: smooth;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #0a0f14, #111b2b);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 1px solid #1f2937;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #00aaff;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #111827;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center; /* CENTERED NAVIGATION */
+            gap: 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #1f2937;
+        }
         nav a {
-            color: white;
-            margin: 0 15px;
+            color: #e6edf3;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1.1rem;
+            position: relative;
+            padding: 5px;
         }
-        nav a:hover { text-decoration: underline; }
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0%;
+            height: 2px;
+            background: #00aaff;
+            transition: width 0.3s ease;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* SECTIONS */
         section {
-            padding: 60px 20px;
+            padding: 80px 20px;
             max-width: 900px;
             margin: auto;
+            line-height: 1.7;
         }
-        footer {
-            background: #222;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+        section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 8px #00aaff;
         }
+
+        /* CYBERSECURITY VISUAL BACKGROUNDS */
         .landing {
-            background: #f4f4f4;
-            padding: 100px 20px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/8/8a/Cyber_Security_%283%29.jpg') center/cover no-repeat;
+            padding: 140px 20px;
             text-align: center;
+            color: white;
+            box-shadow: inset 0 0 200px rgba(0,0,0,0.7);
+        }
+        .landing h2 {
+            font-size: 2.8rem;
+            text-shadow: 0 0 15px #00aaff;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0a0f14;
+            color: #9ca3af;
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid #1f2937;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -39,8 +108,8 @@
 
     <!-- HEADER -->
     <header>
-        <h1>Welcome to Santotonio</h1>
-        <p>Your tagline goes here</p>
+        <h1>Santotonio</h1>
+        <p>Cybersecurity • Technology • Innovation</p>
     </header>
 
     <!-- NAVIGATION BAR -->
@@ -52,39 +121,39 @@
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- LANDING PAGE SECTION -->
+    <!-- LANDING PAGE -->
     <section class="landing" id="home">
-        <h2>Landing Page</h2>
-        <p>This is the main introduction area of your website.</p>
+        <h2>Secure Your Digital Future</h2>
+        <p>Protecting systems, data, and people in an evolving cyber landscape.</p>
     </section>
 
-    <!-- SERVICES SECTION -->
+    <!-- SERVICES -->
     <section id="services">
         <h2>Services</h2>
-        <p>Describe what you offer.</p>
+        <p>We provide cybersecurity consulting, penetration testing, risk assessments, and more.</p>
     </section>
 
-    <!-- ABOUT US SECTION -->
+    <!-- ABOUT US -->
     <section id="about">
         <h2>About Us</h2>
-        <p>Tell your story and mission.</p>
+        <p>We are a team of cybersecurity experts dedicated to safeguarding digital environments.</p>
     </section>
 
-    <!-- BLOG SECTION -->
+    <!-- BLOG -->
     <section id="blog">
         <h2>Blog</h2>
-        <p>Share updates, articles, or news.</p>
+        <p>Insights, news, and updates from the cybersecurity world.</p>
     </section>
 
-    <!-- CONTACT SECTION -->
+    <!-- CONTACT -->
     <section id="contact">
         <h2>Contact</h2>
-        <p>Provide your contact details or a form.</p>
+        <p>Reach out for inquiries, partnerships, or support.</p>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2026 Santotonio — All rights reserved.</p>
+        <p>© 2026 Santotonio — Cybersecurity for a safer tomorrow</p>
     </footer>
 
 </body>
